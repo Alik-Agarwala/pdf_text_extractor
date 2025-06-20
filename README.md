@@ -108,15 +108,3 @@ curl -X 'POST'   'http://127.0.0.1:8000/extract-text/'   -H 'accept: application
 2. Set the URL to `http://127.0.0.1:8000/extract-text/`.
 3. In the "Body" tab, select `form-data`, and choose a file to upload under the key `file`.
 4. Click "Send" to get the response.
-
-## Deployment
-
-Once tested locally, you can deploy the FastAPI application to various platforms like **Heroku**, **AWS**, or **DigitalOcean**.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Author
-
-- [Your Name](https://github.com/yourusername)
