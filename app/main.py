@@ -29,4 +29,4 @@ async def extract_text(file: UploadFile = File(...)):
 
 # Start the app when the script is executed
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=3009)
+    uvicorn.run(app, host="0.0.0.0", port=3010)
