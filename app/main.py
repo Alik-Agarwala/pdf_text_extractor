@@ -2,6 +2,7 @@ from fastapi import FastAPI, File, UploadFile
 from fastapi.responses import JSONResponse
 import PyPDF2
 from io import BytesIO
+import uvicorn
 
 app = FastAPI()
 
@@ -25,3 +26,7 @@ async def extract_text(file: UploadFile = File(...)):
     except Exception as e:
         # Return an error response in case of an exception
         return JSONResponse(content={"error": str(e)}, status_code=400)
+
+# Start the app when the script is executed
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=3009)
